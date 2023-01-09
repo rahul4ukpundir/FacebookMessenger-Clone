@@ -1,6 +1,9 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-const firebaseApp = initializeApp({
+import { getFirestore} from 'firebase/firestore/lite';
+
+
+
+const firebaseConfig ={
     apiKey: "AIzaSyB8JUEGCJdxvJQ-TWi-CW-896gNZeb3FHI",
     authDomain: "facebook-messenger-clone-5cc72.firebaseapp.com",
     projectId: "facebook-messenger-clone-5cc72",
@@ -10,6 +13,8 @@ const firebaseApp = initializeApp({
     measurementId: "G-VL7HRJ1CZS"
 }
 
-);
-const db = getFirestore(firebaseApp)
+
+const app = initializeApp(firebaseConfig);
+const db = new getFirestore(app);
+debugger;
 export default db ;

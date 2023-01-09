@@ -1,0 +1,28 @@
+.app{
+    text-align: center;
+}
+.facebook-messenger-form{
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+    background-color: #e9e9eb;
+    margin: 10;
+ 
+}
+.facebook-form-control{
+   display: flex !important;
+   flex-direction: row !important;
+   align-items: center;
+  
+}
+.facebook-text-box{
+    flex: 1
+}
+.facebook-send-button{
+    flex: 0;
+    margin-right: 50px !important;
+
+
+}
