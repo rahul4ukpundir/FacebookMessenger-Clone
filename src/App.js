@@ -12,11 +12,12 @@ function App() {
   const [input, setInput] = React.useState('');
   const [messages, setMessages] = React.useState([]);
   const [userName, setUserName] = React.useState('');
-
+  const messagesEndRef = React.createRef()
   useEffect(() => {
     setUserName(prompt("Please enter your name"))
   }, [])
 
+  
   const setMessageDBFromDB = async () => {
     const messageRef = ref(db, `messages/`);
     onValue(messageRef, (snapshot) => {
@@ -26,7 +27,7 @@ function App() {
         Object.values(data).map((messages) => {
           newMessage.push(messages);
         });
-        setMessages(newMessage)
+        setMessages(newMessage);
       }
     });
    
@@ -56,7 +57,8 @@ function App() {
   }
 
   return (
-    <div className='app'>
+   
+    <div className='app' ref={messagesEndRef} >
       <h3>Welcome {userName}</h3>
       <form className='facebook-messenger-form'>
         <FormControl className='facebook-form-control'>
@@ -73,7 +75,8 @@ function App() {
         </FormControl>
 
       </form>
-      <FlipMove>
+      <div className='flipMove' ref ={messagesEndRef}>
+      <FlipMove className='flipMoveContainer'>
         {
 
           messages && messages.map((item, index) =>
@@ -81,6 +84,7 @@ function App() {
           )
         }
       </FlipMove >
+      </div>
     </div>
   );
 }

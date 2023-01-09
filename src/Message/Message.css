@@ -1,7 +1,11 @@
 .message{
- padding: 10px;
  margin: 10px;
+  display: flex;
   width: fit-content;
+  border-radius: 10px;
+  background-color: #d3d3d3;
+  padding:10px;
+  
 }
 .message_user{
   margin-left: auto;
@@ -15,4 +19,12 @@
 
 .message_guestCard{
     background-color: #e9e9eb !important;
+}
+
+.timeStamp{
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-left:4px;
+  font-size: 12px !important;
 }
