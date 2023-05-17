@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/FacebookMessenger-Clone/static/css/main.d9efd58c.css",
-    "main.js": "/FacebookMessenger-Clone/static/js/main.3f38021a.js",
+    "main.js": "/FacebookMessenger-Clone/static/js/main.6a7cf5df.js",
     "static/js/787.01fdcbcc.chunk.js": "/FacebookMessenger-Clone/static/js/787.01fdcbcc.chunk.js",
     "index.html": "/FacebookMessenger-Clone/index.html",
     "main.d9efd58c.css.map": "/FacebookMessenger-Clone/static/css/main.d9efd58c.css.map",
-    "main.3f38021a.js.map": "/FacebookMessenger-Clone/static/js/main.3f38021a.js.map",
+    "main.6a7cf5df.js.map": "/FacebookMessenger-Clone/static/js/main.6a7cf5df.js.map",
     "787.01fdcbcc.chunk.js.map": "/FacebookMessenger-Clone/static/js/787.01fdcbcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9efd58c.css",
-    "static/js/main.3f38021a.js"
+    "static/js/main.6a7cf5df.js"
   ]
 }
